@@ -1,2 +1,0 @@
-gopalansh.github.io
-===================
