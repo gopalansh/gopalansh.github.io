@@ -2,7 +2,7 @@
 
 /* Settings
 ---------------------*/
-$email_to = 'contact@agilitysolutions.us'; // Email addresses to send data. Seperate email addresses with ','
+$email_to = 'sgopalan@agilitysolutions.us'; // Email addresses to send data. Seperate email addresses with ','
 $site_title = 'Agility Solutions'; // Your website title
 $webmaster_name = "Siva Gopalan"; // Your name
 
