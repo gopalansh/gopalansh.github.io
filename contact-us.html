@@ -65,7 +65,7 @@
 	 <br /> <br />Email us at : <strong>contact@agilitysolutions.us</strong><br /><br />Call us at : 571-338-3461,571-354-0370<br /><br /></div>
 
 	 <div>
-	 <form enctype="multipart/form-data" action="email_form.php" method="POST" id="form-202666789567651535">
+	 <form enctype="multipart/form-data" action="email_form.php" method="POST" id="form">
 	 <div id="202666789567651535-form-parent" class="wsite-form-container" style="margin-top:10px;">
 	   <ul class="formlist" id="202666789567651535-form-list">
 	     <h2 style="text-align:left;"></h2>
@@ -118,5 +118,23 @@
 	  ga('send', 'pageview');
 	
    </script>
+   
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.10.0/jquery.validate.min.js"></script>
+	<script src="js/form-plugin.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+	        $("#form").validate({
+	                submitHandler: function(form) {
+	            $(form).ajaxSubmit(function(data){
+	                    if(data = 'success') {
+	                            $("#form").fadeOut();
+	                            $("#form").after('<h4>Thank you for your interest. <br />We will get back to you soon</h4>');
+	                    }
+	            });
+	   }
+	        });
+	})
+       </script>
   </body>
 </html>
